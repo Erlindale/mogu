@@ -1,0 +1,336 @@
+// 待编译代码
+@import "reset";
+@import "function";
+$root:16px;
+@mixin transitionall($arguments:all 1s){
+	-webkit-transition:$arguments;
+	-o-transition:$arguments;
+	-ms-transition:$arguments;
+	-moz-transition:$arguments;
+	transition:$arguments;
+}
+/* 头部 */
+#header{
+	background:#f2f2f2;
+	border-bottom:1px solid #ddd;
+	height:30px;
+	margin-bottom: 0;
+}
+.wrap{
+	width:1200px;
+	margin:0 auto;
+}
+.home{
+	float:left;
+	padding:0 20px;
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	margin-left:20px;
+	vertical-align:middle;
+	background:url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) -4px -234px no-repeat;
+}
+.header-top{
+	float:right;
+	height:30px;
+	display:inline-block;
+	vertical-align:middle;
+	.s1{
+		display: inline;
+	    float: left;
+	    margin: 0 15px 0 0;
+	    height: 31px;
+	    position: relative;
+	    a{
+	    	float: left;
+		    overflow: hidden;
+		    margin-top: 8px;
+		    color: #666;
+		    line-height: 14px;
+	    }
+	} 
+	.myorder{
+		background:url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) 16px -528px no-repeat;
+		a{
+			padding-left: 38px;
+		}
+	}
+	.border{
+		border-left: 1px solid #ddd;
+	}
+	.shopping-cart-v2{
+		background:url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) 8px -420px no-repeat;
+		a{
+			padding-left: 38px;
+		}
+	}
+	.has-icon{
+		padding-right: 10px;
+		
+		.icon-delta{
+			position:absolute;
+			top: 14px;
+    		right: 0;
+		    width: 7px;
+		    height: 5px;
+		    background: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) -4px -229px;
+		}
+		.ext-mode{
+			width: 100px;
+			display: none;
+		    position: absolute;
+		    z-index: 999;
+		    top: 100%;
+		    left: 0;
+		    background: #eee;
+		    border: 1px solid #ddd;
+		    border-top: none;
+		    border-radius: 0 0 3px 3px;
+		}
+	}
+	.custom-item{
+		a{
+			padding-left: 15px;
+		}
+	}
+	.myxiaodian{
+		margin-right: 0;
+    	background: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) 8px -566px no-repeat;
+		a{
+			padding-left:35px;
+		}
+	}	  
+}
+/* logo */
+#header_mid{
+	border:0px solid transparent;
+	.wrap{
+		overflow:hidden;
+	}
+	
+}
+.logo{
+	display:inline-block;
+	width:240px;
+	height:90px;
+	float:left;
+}
+.logo img{
+	float:left;
+	width:100%;
+	height:100%;
+}
+/* 搜索框 */
+.normal-search-content{
+	width: 482px;
+    height: 90px;
+    float: left;
+    margin-left: 120px;
+} 
+
+.top_nav_search{
+	position: relative;
+    z-index: 50;
+    width: 482px;
+    margin-top: 20px;
+}
+.search_inner_box{
+	border: 1px solid #f07;
+	width: 480px;
+	height: 34px;
+	border-radius: 0 6px 6px 0;
+	background: #fff;	
+	.selectbox{
+		float: left;
+		width: 60px;
+		text-align: center;
+		position:relative;
+
+		.selected{
+
+			display: inline-block;
+			height: 34px;
+			line-height: 34px;
+			color:#f07;
+			background:#fff;
+			// background: no-repeat center right;这里少一个尖角号的图片联网查
+		}
+		ol{
+			border-top:1px solid transparent;
+			display:none;
+			position:absolute;
+			left:-1px;
+			width:60px;
+			background:#fff;
+			border:1px solid #e5e5e5;
+
+		}
+	}
+}
+
+#top_nav_form{
+	display: block;
+	height: 34px;
+	overflow:hidden;
+	.ts_txt{
+		display: block;
+		overflow:hidden;
+		width:305px;
+		height:22px;
+		line-height:22px;
+		padding:6px 0 6px 10px;
+		border:none;
+		color:#999;
+		font-size: 12px;
+		background:#fff;
+		float: left;
+	}
+	.ts_btn{
+		float: right;
+		height:34px;
+		width:100px;
+		line-height: 34px;
+		background:#f07;
+		border:none;
+		font-size: 16px;
+		color:#fff;
+		border-radius:0 5px 5px 0;
+	}
+}
+   		
+/* 搜索框下面的热搜关键字*/
+.ts_hotwords{
+	width:482px;
+	height:20px;
+	overflow:hidden;
+	margin-top:5px;
+	a{
+		float:left;
+		height:20px;
+		line-height: 20px;
+		margin:0 12px 0 0;
+	}
+	a:hover{
+		color:#ff4466;
+		text-decoration: underline;
+	}
+	.ts_hotword1{
+		color:#ff4466;
+	}
+}
+/* 二维码 */
+.mid_fr{
+	float:right;
+	height:90px;
+	width:220px;
+	overflow:hidden;
+	img{
+		height:100%;
+	}
+}
+/* 导航栏标题部分 */
+#nav{
+	width:100%;
+	background:#fff;
+	border-bottom:2px solid #f07;
+}
+.main_topnav_content{
+	display:block;
+	height:40px;
+	width:1200px;
+	margin:0 auto;
+}
+.indexLeftLink{
+	background:url(https://s10.mogucdn.com/p2/170308/131743902_57fa7026k3k6eghdcl5cgl8aalckk_257x40.png);
+	width:256px;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	height:100%;
+}
+.indexLeftTitle{
+	position:absolute;
+	left:47px;
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	color:#fff;
+}
+.indexRightLink{
+	float:left;
+	height:100%;
+}
+.indexmainLink{
+	display:block;
+	height:20px;
+	width:140px;
+	line-height:20px;
+	margin-top:10px;
+	border-right:1px solid #ddd;
+	text-align:center;
+	color:#333;
+	font-size:18px;
+	float:left;
+}
+.indexmainLink:hover{
+		color:#ff4466;
+}
+/* 轮播图部分 */
+.pc_banner_wrapper{
+	width:1200px;
+	background:#088;
+	height:440px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.pc_indexPage_nav_menu{
+	width:256px;
+	height:440px;
+	background-color: rgba(255, 255, 255, 0.8);
+	position:relative;
+	float:left;
+
+}
+.nav_list_row_first{
+	margin-top:40px;
+
+}
+.nav_list_row{
+	margin:0;
+	padding:0;
+	height:31px;
+	font-family:'PingFang SC';
+	overflow:hidden;
+}
+.nav_wrap{
+	margin:0;
+	padding:5px 0 5px 18px;
+	vertical-align:top;
+	overflow:hidden;
+	border-left:2px solid transparent;
+}
+.nav_list_title{
+	margin:0;
+	padding:0;
+	height:21px;
+	line-height:21px;
+	float:left;
+}
+.nav_list_content{
+	float:left;
+	height:21px;
+	line-height:25px;
+}
+.item_slider{
+	width:778px;
+	height:440px;
+	float:left;
+
+}
+.user_info{
+	width:166px;
+	height:420px;
+	margin-top:10px;
+	background:#990;
+	float:left;
+}
