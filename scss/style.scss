@@ -276,12 +276,16 @@ $root:16px;
 		color:#ff4466;
 }
 /* 轮播图部分 */
+//导航栏
+#banner{
+	background-color:rgb(243, 138, 161);
+}
 .pc_banner_wrapper{
 	width:1200px;
-	background:#088;
 	height:440px;
 	margin:0 auto;
 	overflow:hidden;
+
 }
 .pc_indexPage_nav_menu{
 	width:256px;
@@ -289,6 +293,7 @@ $root:16px;
 	background-color: rgba(255, 255, 255, 0.8);
 	position:relative;
 	float:left;
+	font-family:'PingFang SC';
 
 }
 .nav_list_row_first{
@@ -315,22 +320,160 @@ $root:16px;
 	height:21px;
 	line-height:21px;
 	float:left;
+	font-family:'PingFang SC';
+	.catagory{
+		font-size: 14px;
+		font-weight: 600;
+		color:#333;
+	}
 }
 .nav_list_content{
 	float:left;
 	height:21px;
 	line-height:25px;
 }
+.nav_list_content_span{
+	display:inline-block;
+	height:100%;
+	
+	a{ 
+		display: inline-block;
+		height:100%;
+		float: left;
+		font-size: 12px;
+		color:#666;
+		font-weight: normal;
+	}
+	ins{
+		font-size: 0;
+		height:12px;
+		width:0;
+		float: left;
+		border-left:1px solid rgba(255,255,255,0.15);
+		margin:6px 9px 0;
+	}
+}
+.first{
+	display: inline-block;
+	margin-left:12px;
+}
+
+.nav_list_tagicon{
+	width:12px;
+	height:13px;
+	display:inline-block;
+	margin-left:2px;
+	background:url(https://s10.mogucdn.com/p2/170309/131743902_81e3g2jf3j2e3lgb8fji63i9i7bg0_24x28.png);
+	background-size: 100% 100%;
+}
+/* 轮播图 */
 .item_slider{
 	width:778px;
 	height:440px;
 	float:left;
-
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+	
 }
+/* 用户信息 */
 .user_info{
 	width:166px;
 	height:420px;
 	margin-top:10px;
-	background:#990;
+
 	float:left;
+}
+.base_info{
+	position:relative;
+	width:166px;
+	height:195px;
+	padding-top:10px;
+	background-color:rgba(255,255,255,0.8);
+}
+.avatar{
+	display:block;
+	text-decoration:none;
+	width:72px;
+	height:72px;
+	margin:0 auto 0 auto;
+	border-radius:100%;
+	background:#ff94c6 url(https://s10.mogucdn.com/p2/160826/upload_7a9719cl61k83h5cbkc9fl1330i5c_60x64.png) no-repeat center center;
+	background-size:30px 30px;
+}
+.member{
+	position:absolute;
+	top:58px;
+	right:47px;
+	height:24px;
+	width:24px;
+}
+.welcome{
+	font:normal 12px/1.5 'PingFang SC';
+	margin:5px 0 7px 0;
+	text-align:center;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	width:100%;
+}
+.privileged{
+	display:block;
+	width:72px;
+	height:24px;
+	border:1px solid #ff5777;
+	font-size:12px;
+	color:#ff5777;
+	margin:0 auto;
+	line-height:24px;
+	.privilid-text{
+		margin:0 12px;
+	}
+}
+.foot_wrapper{
+	margin-top:10px;
+	width:166px;
+	height:205px;
+	background-color:rgba(255,255,255,0.8);
+}
+.user-propa{
+	display:block;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+.propaganda{
+	width:100%;
+	height:75px;
+	margin:0 auto;
+	font:normal 12px/1.5 'PingFang SC';
+	line-height:1.4;
+	text-align:center;
+}
+.top_title{
+	font-size:16px;
+	color:#333;
+	padding-top:20px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	width:100%;
+}
+.top-desc{
+	font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.live_show{
+	width:130px;
+	height:130px;
+	overflow:hidden;
+	margin:0 auto;
+	img{
+		width:100%;
+	}
 }
