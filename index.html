@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>蘑菇街</title>
-	<!-- <link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 
 
 </head>
 <body>
+
 	<!-- header -->
 	<div id="header">
 		<div class="wrap clear">
@@ -61,6 +60,7 @@
 						<!-- 搜索框左边的选择店铺和商品 -->
 						<div class="selectbox">
 							<span class="selected">搜商品</span>
+							<i class="nav_menu_icon"></i>
 							<ol>
 								<li><a href="#javascript">商品</a></li>
 								<li><a href="#javascript">店铺</a></li>
@@ -93,6 +93,53 @@
 			</div>
 		</div>
 	</div>
+	<!-- 右侧导航栏 -->
+	<div class="mgj_rightbar">
+		<!-- kongde -->
+		<div class="mgj_rightbar_top_blank"></div>
+		<!-- 方便定margin的空div -->
+		<div class="mgj_rightbar_blank_div"></div>
+		<!-- 用户头像 -->
+		<!-- 购物车 -->
+		<div class="sidebar-item mgj-my-cart">
+			<a href="#javascript">
+				<i class="s-icon"></i>
+				<div class="s-txt">购物车</div>
+				<div class="num"></div>
+			</a>
+		</div> 	
+		<!-- 优惠券 -->
+		<div class="sidebar-item mgj-my-coupon">
+			<a href="#javascript">
+				<i class="s-icon"></i>
+				<div class="s-txt">优惠券</div>
+				<div class="num"></div>
+			</a>
+		</div> 	
+		<!-- 钱包 -->
+		<div class="sidebar-item mgj-my-wallet">
+			<a href="#javascript">
+				<i class="s-icon"></i>
+				<div class="s-txt">钱包</div>
+			</a>
+		</div> 
+		<!-- 足迹 -->
+		<div class="sidebar-item mgj-my-browserlog">
+			<a href="#javascript">
+				<i class="s-icon"></i>
+				<div class="s-txt">足迹</div>
+			</a>
+		</div> 
+		<!-- 回到顶部 -->
+		<div id="sideBottom">
+			<div class="sidebar-item mgj-back2top">
+				<a href="#javascript">
+					<i class="s-icon"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	
 	<!-- 导航标题 -->
 	<div id="nav">
 		<div class="main_topnav_content clear">
@@ -106,9 +153,7 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- 轮播图 部分-->
-
 	<div id="banner">
 		<div class="pc_banner_wrapper clear">
 			<!-- 导航栏 -->
@@ -395,8 +440,19 @@
 					<a href="#javascript"><img src="https://s10.mogucdn.com/mlcdn/c45406/180115_53949j73ffeff94469h838fijk75k_778x440.jpg" alt=""></a>
 					<a href="#javascript"><img src="https://s10.mogucdn.com/mlcdn/c45406/180115_53949j73ffeff94469h838fijk75k_778x440.jpg" alt=""></a>
 				</div>	
-				<div class="mslide_dot_box">
-					<a href="#javascript"><img src="" alt=""></a>
+				<div class="mslide_dot_box clear">
+					<a href="#javascript" class="dot_default">
+						<img src="images/04.png" class="dot_show_img" alt="">
+					</a>
+					<a href="#javascript" class="dot_default">
+						<img src="" class="dot_show_img" alt="">
+					</a>
+					<a href="#javascript" class="dot_default">
+						<img src="" class="dot_show_img" alt="">
+					</a>
+					<a href="#javascript" class="dot_default">
+						<img src="" class="dot_show_img" alt="">
+					</a>
 				</div>
 			</div>
 			<!-- 用户信息 -->
@@ -428,8 +484,283 @@
 		</div>
 	</div>
 	<!-- 内容区 -->
-	<div id="container"></div>
+	<div class="module_row">
+		<div class="mod_row">
+			<!-- 限时快抢 -->
+			<div class="spcate-fastbuy fl">
+				<!-- 主 -->
+				<a href="#javascript" class="spcate-mainblock fl">
+					<div class="spcate-maininfos">
+						<div class="font-title yahei">限时快抢</div>
+					<div class="spcate-timer">
+						<span class="h">00 : </span>
+						<span class="m">00 : </span>
+						<sapn class="s">00</sapn>
+					</div>
+					</div>
+					
+					<div class="spcate-label">
+						<!-- 快抢价 -->
+						<div class="spcate-labeititle yahei">快抢价</div>
+						<div class="spcate-labelprice yahei">139</div>
+					</div>
+					<div class="spcate-bigImg">
+						<img src="http://s3.mogucdn.com/mlcdn/1689c6/180111_50al4425i48cb8e1jk3ghg9d6aj4i_210x280.png_240x240.v1cAC.webp" alt="">
+					</div>
+				</a>
+				<!-- 副 -->
+				<div class="spcate-subblocks fl">
+					<a href="#javascript" class="spcate-subblock">
+						<div class="spcate-subinfos fl">
+							<div class="font-title yahei">秒速告罄</div>
+							<div class="font-subTitle fl color_999 yahei">底价疯抢仅剩1件</div>
+						</div>
+						<div class="spcate-subgoodsimg fr">
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171016_4ib9709h6c3eiljjae93hi8g9c49k_260x260.png_200x9999.v1c7E.70.webp" alt="">
+						</div>
+					</a>
+					<a href="#javascript" class="spcate-subblock">
+						<div class="spcate-subinfos fl">
+							<div class="font-title yahei">一元快抢</div>
+							<div class="font-subTitle fl color_999 yahei">百余好货1元抢</div>
+						</div>
+						<div class="spcate-subgoodsimg">
+							<img src="http://s11.mogucdn.com/mlcdn/c45406/171018_0ggl2ef5afi9651hl095dj56cbi18_260x260.png_200x9999.v1c7E.70.webp" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="spcate-entry-container fl">
+				<!-- 主 -->
+				<a href="#javascript" class="spcate-mainblock fl">
+					<div class="spcate-maininfos">
+						<div class="font-title yahei">团购好货</div>
+					<div class="font-subTitle fl color_999 yahei">参团购物 每天上新</div>
+					</div>
+					<div class="spcate-bigImg">
+						<img src="http://s17.mogucdn.com/mlcdn/c45406/171016_2c1fecj165ialad9baa6f7c8i4018_260x260.png_200x9999.v1c7E.70.webp" alt="">
+					</div>
+				</a>
+				<!-- 副 -->
+				<div class="spcate-subblocks fl">
+					<a href="#javascript" class="spcate-subblock">
+						<div class="spcate-subinfos fl">
+							<div class="font-title yahei">品牌特卖</div>
+							<div class="font-subTitle fl yahei" style="color: #ff5577" >品牌好货，每日10点上新！</div>
+						</div>
+						<div class="spcate-subgoodsimg fr">
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171201_75f50el4adlgk7b17877ic4ideahl_260x260.png_200x9999.v1c7E.70.webp" alt="">
+						</div>
+					</a>
+					<a href="#javascript" class="spcate-subblock">
+						<div class="spcate-subinfos fl">
+							<div class="font-title yahei">U质团</div>
+							<div class="font-subTitle fl color_999 yahei">优质团价19元起</div>
+						</div>
+						<div class="spcate-subgoodsimg">
+							<img src="http://s11.mogucdn.com/mlcdn/c45406/171016_3je15bck8k14ga5ff7f0b13kgk22g_260x260.png_200x9999.v1c7E.70.webp" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+			<a href="#javascript" class="spcate-entry-container fl spcate-banner">
+				<!-- 主 -->
+					<div class="spcate-maininfos">
+						<div class="font-title yahei">甄选爆款</div>
+					<div class="font-subTitle fl color_999 yahei">尖货TOP9.9元起！</div>
+					</div>
+					<div class="spcate-bigImg">
+						<img src="http://s17.mogucdn.com/mlcdn/c45406/171201_01ca502glhbg14b6206a98b9ajjdg_260x260.png_200x9999.v1c7E.70.webp" alt="">
+					</div>
+			</a>
+	</div>
+	<!-- 红人穿搭 -->
+	<div class="module_row">
+		<div class="wears">
+			<div class="cewebrity_dress_module">
+				<div class="cewebrity_dress_module_title">
+					<div class="cewebrity_dress_title">
+						<span class="cewebrity_dress_block"></span>
+						红人穿搭
+					</div>
+					<a href="#javascript" class="cewebrity_dress_checkmore">查看全部 > </a>
+				</div>
+				<div class="cewebrity_dress_module_content">
+					<!-- 左边模块 -->
+					<div class="cewebrity_dress_left_part fl">
+						<div class="cewebrity_dress_left_part_item fl">
+							<a href="#javascript" class="cewebrity_dress_left_item">
+								<div class="cewebrity_dress_left_part_item_title">休闲运动控</div>
+								<img src="http://s17.mogucdn.com/mlcdn/c45406/171020_0kd5ik293h38bh8dj6193l4c76l3e_302x604.jpg_300x9999.v1c7E.70.webp" alt="">
+							</a>
+						</div>
+						<div class="cewebrity_dress_left_part_item fl">
+							<a href="#javascript" class="cewebrity_dress_left_item">
+								<div class="cewebrity_dress_left_part_item_title">休闲运动控</div>
+								<img src="http://s17.mogucdn.com/mlcdn/c45406/171020_0kd5ik293h38bh8dj6193l4c76l3e_302x604.jpg_300x9999.v1c7E.70.webp" alt="">
+							</a>
+						</div>
+						<div class="cewebrity_dress_left_part_item fl">
+							<a href="#javascript" class="cewebrity_dress_left_item">
+								<div class="cewebrity_dress_left_part_item_title">休闲运动控</div>
+								<img src="http://s17.mogucdn.com/mlcdn/c45406/171020_0kd5ik293h38bh8dj6193l4c76l3e_302x604.jpg_300x9999.v1c7E.70.webp" alt="">
+							</a>
+						</div>
+						<div class="cewebrity_dress_left_part_item fl">
+							<a href="#javascript" class="cewebrity_dress_left_item">
+								<div class="cewebrity_dress_left_part_item_title">休闲运动控</div>
+								<img src="http://s17.mogucdn.com/mlcdn/c45406/171020_0kd5ik293h38bh8dj6193l4c76l3e_302x604.jpg_300x9999.v1c7E.70.webp" alt="">
+							</a>
+						</div>
+						<div class="cewebrity_dress_left_part_item cewebrity_dress_left_part_item_forth fl">
+							<a href="#javascript" class="cewebrity_dress_left_item">
+								<div class="cewebrity_dress_left_part_item_title">休闲运动控</div>
+								<img src="http://s17.mogucdn.com/mlcdn/c45406/171020_0kd5ik293h38bh8dj6193l4c76l3e_302x604.jpg_300x9999.v1c7E.70.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<!-- 右边模块 -->
+					<div class="cewebrity_dress_right_part fr">
+						<a href="#javascript" class="cewebrity_dress_right_part_item fl">
+							<div class="cewebrity_dress_right_part_item_title">小个子外套</div>
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171024_01bljgb89g8kadkc6l49lejejc82l_302x604.jpg_200x9999.v1c7E.70.webp" alt="">
+						</a>
+						<a href="#javascript" class="cewebrity_dress_right_part_item cewebrity_dress_right_part_item_db fl">
+							<div class="cewebrity_dress_right_part_item_title">小个子外套</div>
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171024_01bljgb89g8kadkc6l49lejejc82l_302x604.jpg_200x9999.v1c7E.70.webp" alt="">
+						</a>
+						<a href="#javascript" class="cewebrity_dress_right_part_item fl">
+							<div class="cewebrity_dress_right_part_item_title">小个子外套</div>
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171024_01bljgb89g8kadkc6l49lejejc82l_302x604.jpg_200x9999.v1c7E.70.webp" alt="">
+						</a>
+						<a href="#javascript" class="cewebrity_dress_right_part_item cewebrity_dress_right_part_item_db fl">
+							<div class="cewebrity_dress_right_part_item_title">小个子外套</div>
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171024_01bljgb89g8kadkc6l49lejejc82l_302x604.jpg_200x9999.v1c7E.70.webp" alt="">
+						</a>
+						<a href="#javascript" class="cewebrity_dress_right_part_item fl">
+							<div class="cewebrity_dress_right_part_item_title">小个子外套</div>
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171024_01bljgb89g8kadkc6l49lejejc82l_302x604.jpg_200x9999.v1c7E.70.webp" alt="">
+						</a>
+						<a href="#javascript" class="cewebrity_dress_right_part_item cewebrity_dress_right_part_item_db fl">
+							<div class="cewebrity_dress_right_part_item_title">小个子外套</div>
+							<img src="http://s3.mogucdn.com/mlcdn/c45406/171024_01bljgb89g8kadkc6l49lejejc82l_302x604.jpg_200x9999.v1c7E.70.webp" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- footer -->
-	<div id="footer"></div>
+	<div id="footer">
+		<div class="mgj_copyright">
+			<div class="mgj_footer_helper">
+				<div class="mgj_footer_helper_mod">
+					<div class="mgj_footer_helper_mod_container">
+						<h4 class="mgj_footer_helper_title">- 新手帮助 -</h4>
+						<ul>
+							<li class="mgj_footer_helper_item"><a href="#javascript">常见问题</a></li>
+							<li class="mgj_footer_helper_item"><a href="#javascript">自助服务</a></li>
+							<li class="mgj_footer_helper_item"><a href="#javascript">联系客服</a></li>
+							<li class="mgj_footer_helper_item"><a href="#javascript">意见反馈</a></li>
+
+						</ul>
+					</div>
+				</div><div class="mgj_footer_helper_mod">
+					<div class="mgj_footer_helper_mod_container">
+						<h4 class="mgj_footer_helper_title">- 权益保障 -</h4>
+						<ul>
+							<li class="mgj_footer_helper_item"><div>全国包邮</div></li>
+							<li class="mgj_footer_helper_item"><div>7天无理由退货</div></li>
+							<li class="mgj_footer_helper_item"><div>退货运费补贴</div></li>
+							<li class="mgj_footer_helper_item"><div>限时发货</div></li>
+
+						</ul>
+					</div>
+				</div><div class="mgj_footer_helper_mod">
+					<div class="mgj_footer_helper_mod_container">
+						<h4 class="mgj_footer_helper_title">- 支付方式 -</h4>
+						<ul>
+							<li class="mgj_footer_helper_item"><div>微信支付</div></li>
+							<li class="mgj_footer_helper_item"><div>支付宝</div></li>
+							<li class="mgj_footer_helper_item"><div>白付美支付</div></li>
+							<li class="mgj_footer_helper_item"><div></div></li>
+
+						</ul>
+					</div>
+				</div><div class="mgj_footer_helper_mod">
+					<div class="mgj_footer_helper_mod_container">
+						<h4 class="mgj_footer_helper_title">- 移动客户端下载 -</h4>
+						<ul>
+							<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+								<div>蘑菇街</div>
+								<img src="images/01.png" alt="" class="mgj_footer_helper_quoer_code">
+							</li>
+							<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+								<div>美丽说</div>
+								<img src="images/02.png" alt="" class="mgj_footer_helper_quoer_code">
+							</li>
+							<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+								<div>uni引力</div>
+								<img src="images/03.png" alt="" class="mgj_footer_helper_quoer_code">
+							</li>
+							<li class="mgj_footer_helper_item"><div></div></li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="mgj_footer_otherlink">
+				<p class="mgj_footer_otherlink_container">
+					<a href="#javascript" class="mgj_footer_a">美丽说</a>
+					<b class="mgj_footer_b"> | </b>
+					<a href="#javascript" class="mgj_footer_a">淘粉吧</a>
+					<b class="mgj_footer_b"> | </b>
+					<a href="#javascript" class="mgj_footer_a">QQ钱包</a>
+					<b class="mgj_footer_b"> | </b>
+					<a href="#javascript" class="mgj_footer_a">时尚品牌网</a>
+					<b class="mgj_footer_b"> | </b>
+					<a href="#javascript" class="mgj_footer_a">装修</a>
+					<b class="mgj_footer_b"> | </b>
+					<a href="#javascript" class="mgj_footer_a">慧聪网</a>
+					<b class="mgj_footer_b"> | </b>
+
+				</p>
+			</div>
+			<div class="mgj_footer_mgjinfo">
+				<ul>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">关于我们</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">招聘信息</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">联系我们</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">商家入驻</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">商家后台</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">蘑菇商学院</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">商家社区</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">规则中心</a></li>
+					<li class="mgj_footer_mgjinfo_item"><a href="#javascript">有害信息举报</a></li>
+				</ul>
+				<p class="mgjhostname">©2017 Mogujie.com 杭州卷瓜网络有限公司</p>
+			</div>
+			<div class="mgj_footer_copyright">
+				<p class="mgj_footer_copyright_container">
+					<span class="mgj_footer_copyright_span color_999">营业执照：</span>
+					<a href="#javascript" class="mgj_footer_a color_999">913301065526808764</a>
+					<b class="mgj_footer_b color_999"> | </b>
+					<span class="mgj_footer_copyright_span color_999">网络文化经营许可证：</span>
+					<a href="#javascript" class="mgj_footer_a color_999">浙网文（2016）0349-219号</a>
+					<b class="mgj_footer_b color_999"> | </b>
+					<span class="mgj_footer_copyright_span color_999">增值电信业务经营许可证：</span>
+					<a href="#javascript" class="mgj_footer_a color_999">浙B2-20110349</a>
+					<b class="mgj_footer_b color_999"> | </b>
+					<span class="mgj_footer_copyright_span color_999"></span>
+					<a href="#javascript" class="mgj_footer_a color_999">安全责任书</a>
+					<b class="mgj_footer_b color_999"> | </b>
+					<span class="mgj_footer_copyright_span color_999"></span>
+					<a href="#javascript" class="mgj_footer_a color_999">浙公网安备 33010602002329号</a>
+					<b class="mgj_footer_b color_999"> | </b>
+				</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,0 +1,331 @@
+@import "../scss/reset";
+@import "../scss/public";
+// 头部
+#header{
+	background:#f2f2f2;
+	border-bottom:1px solid #ddd;
+	height:30px;
+	margin-bottom: 0;
+}
+.wrap{
+	width:1200px;
+	margin:0 auto;
+}
+.home{
+	float:left;
+	padding:0 20px;
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	margin-left:20px;
+	vertical-align:middle;
+	background:url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) -4px -234px no-repeat;
+}
+.header-top{
+	float:right;
+	height:30px;
+	display:inline-block;
+	vertical-align:middle;
+	.s1{
+		display: inline;
+	    float: left;
+	    margin: 0 15px 0 0;
+	    height: 31px;
+	    position: relative;
+	    a{
+	    	float: left;
+		    overflow: hidden;
+		    margin-top: 8px;
+		    color: #666;
+		    line-height: 14px;
+	    }
+	} 
+	.myorder{
+		background:url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) 16px -528px no-repeat;
+		a{
+			padding-left: 38px;
+		}
+	}
+	.border{
+		border-left: 1px solid #ddd;
+	}
+	.shopping-cart-v2{
+		background:url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) 8px -420px no-repeat;
+		a{
+			padding-left: 38px;
+		}
+	}
+	.has-icon{
+		padding-right: 10px;
+		
+		.icon-delta{
+			position:absolute;
+			top: 14px;
+    		right: 0;
+		    width: 7px;
+		    height: 5px;
+		    background: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) -4px -229px;
+		}
+		.ext-mode{
+			width: 100px;
+			display: none;
+		    position: absolute;
+		    z-index: 999;
+		    top: 100%;
+		    left: 0;
+		    background: #eee;
+		    border: 1px solid #ddd;
+		    border-top: none;
+		    border-radius: 0 0 3px 3px;
+		}
+	}
+	.custom-item{
+		a{
+			padding-left: 15px;
+		}
+	}
+	.myxiaodian{
+		margin-right: 0;
+    	background: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) 8px -566px no-repeat;
+		a{
+			padding-left:35px;
+		}
+	}	  
+}
+/* 右侧导航栏 */
+.mgj_rightbar{
+	position:fixed;
+	height:100%;
+	top:0;
+	right:0;
+	width:30px;
+	color:#000;
+	font-size:12px;
+	background:#202020;
+}
+.mgj_rightbar_blank_div{
+	position:relative;
+	top:0;
+	right:0;
+	height:10%;
+	width:30px;
+}
+/* 购物车 */
+.sidebar-item{
+	position:relative;
+	padding:4px 4px 0;
+	text-align:center;
+	a{
+		display: block;
+		color: #fff;
+		text-align:center;
+		line-height: 15px;
+		border-bottom:1px solid rgba(221,221,221,0.6);
+		padding-bottom:12px;
+	}
+	.s-icon{
+		background-image: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png);
+		background-repeat:no-repeat;
+		width:30px;
+		height:30px;
+		display: block;
+	}
+	.num{
+		display: none;
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 30px;
+	    color: #fff;
+	    text-align: center;
+	    line-height: 20px;
+	    background-color: #ef2f23;
+	    margin-top: 5px;
+	}
+	
+}
+.mgj-my-cart{
+	.s-icon{
+		background-position: -271px -129px;
+		
+	}
+}
+.mgj-my-coupon{
+	.s-icon{
+		background-position: -271px -159px;
+	}
+}
+.mgj-my-wallet{
+	.s-icon{
+		background-position: -271px -219px;
+	}
+}
+.mgj-my-browserlog{
+	.s-icon{
+		background-position: -271px -189px;
+	}
+}
+#sideBottom{
+	position:absolute;
+	bottom:10px;
+	width:30px;
+	background:#202020;
+}
+.mgj-back2top{
+	padding-top:0;
+	padding-bottom:0;
+	a{
+		border-bottom:0;
+		border-top:1px solid rgba(221,221,221,0.6)
+	}
+	.s-icon{
+		background-position:-270px -279px;
+	}
+}
+.mgj-back2top:hover{
+	padding-bottom:0;
+	background-color:#ef2f23;
+	margin-top:0;
+}
+.sidebar-item:hover{
+	background:#ef2f23;
+	margin-top:-1px;
+}
+#body_wrap {
+    min-height: 350px;
+    background: #fff;
+}
+.g-header {
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid #ddd;
+    background: #f2f2f2;
+}
+.process-bar {
+    float: right;
+    width: 494px;
+}
+/* footer */
+#footer{
+	width:100%;
+	overflow:hidden;
+	min-height:180px;
+	margin-top:0;
+	padding-top:50px;
+	padding-bottom:50px;
+
+}
+.mgj_copyright{
+	min-height:180px;
+	font-size:12px;
+	margin:0 auto;
+	width:1200px;
+	font-family:"PingFang SC","Times New Roman","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",STXihei,"\534E\6587\7EC6\9ED1",serif;
+
+}
+.mgj_footer_helper{
+	width:100%;
+	height:100px;
+	border-bottom:2px solid #FF5777;
+	
+}
+.mgj_footer_helper_mod{
+	height:100px;
+	float:left;
+	width:25%;
+	a:hover{
+		color: #f57;
+	}
+}
+.mgj_footer_helper_mod_container{
+	padding-left:20px;
+	width:78%;
+}
+.mgj_footer_helper_title{
+	font-size:14px;
+	margin-left:25px;
+	margin-bottom:10px;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	color:#666;
+}
+.mgj_footer_helper_item{
+	float:left;
+	display:inline-block;
+	width:80px;
+	height:20px;
+	line-height:20px;
+	div{
+		color: #999;
+	}
+	a{
+		color: #999;
+	}
+}
+.mgj_footer_helper_item_last{
+	position:relative;
+	width:62px;
+	display:inline-block;
+}
+.mgj_footer_helper_quoer_code{
+	position:absolute;
+	display:none;
+	height:70px;
+	width:70px;
+	top:20px;
+	left:-17px;
+	overflow:hidden;
+}
+.mgj_footer_helper_item_last:hover .mgj_footer_helper_quoer_code{
+	display:block;
+}
+.mgj_footer_otherlink{
+	margin-bottom:8px;
+	line-height:27px;
+	border-bottom:1px solid #ddd;
+}
+.mgj_footer_otherlink_container{
+	margin:5px 0;
+}
+.mgj_footer_a{
+	display:inline-block;
+	color:#666；
+}
+.mgj_footer_a:hover{
+	color:#f57;
+}
+.mgj_footer_b{
+	margin:0 5px;
+	font-weight:400;
+	color；:#666;
+}
+.mgj_footer_mgjinfo{
+	min-height:20px;
+	margin-top:10px;
+	overflow:hidden;
+	a:hover{
+		color: #f57;
+	}
+}
+.mgj_footer_mgjinfo_item{
+	float:left;
+	display:inline-block;
+	width:80px;
+	height:20px;
+	line-height:20px;
+	a{
+		color: #666;
+	}
+}
+.mgjhostname{
+	color:#999;
+}
+
+.mgj_footer_copyright{
+	margin-bottom:8px;
+	line-height:27px;
+	a:hover{
+		color: #999;
+	}
+
+}

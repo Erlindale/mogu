@@ -14,6 +14,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-connect": "^5.2.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-sass-china": "^3.1.0"
   }
 }

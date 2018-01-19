@@ -15,7 +15,7 @@ body {
   font: 12px/1.6 tahoma,arial,sans-serif;
   color: #333;
   min-width: 1200px;
-  background: #fff; }
+  background: whitesmoke; }
 
 img {
   display: block;
@@ -39,10 +39,3 @@ b, strong, h1, h2, h3, h4, h5, h6 {
 
 table {
   border-collapse: collapse; }
-
-.clear:after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 0;
-  visibility: hidden; }

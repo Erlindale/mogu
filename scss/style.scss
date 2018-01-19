@@ -1,6 +1,6 @@
 // 待编译代码
 @import "reset";
-@import "function";
+@import "public";
 $root:16px;
 @mixin transitionall($arguments:all 1s){
 	-webkit-transition:$arguments;
@@ -104,6 +104,7 @@ $root:16px;
 /* logo */
 #header_mid{
 	border:0px solid transparent;
+	background:#fff;
 	.wrap{
 		overflow:hidden;
 	}
@@ -145,7 +146,7 @@ $root:16px;
 		width: 60px;
 		text-align: center;
 		position:relative;
-
+		
 		.selected{
 
 			display: inline-block;
@@ -153,7 +154,20 @@ $root:16px;
 			line-height: 34px;
 			color:#f07;
 			background:#fff;
-			// background: no-repeat center right;这里少一个尖角号的图片联网查
+			
+			
+		}
+		.nav_menu_icon{
+			position: absolute;
+		    right:0;
+		    top: 16px;
+		    width: 8px;
+		    height: 4px;
+		    vertical-align: middle;
+			background: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) no-repeat -57px -229px;
+		    // border-width: 4px;
+		    // border-style: solid;
+		    // border-color: rgb(255, 0, 119) transparent transparent;
 		}
 		ol{
 			border-top:1px solid transparent;
@@ -228,6 +242,104 @@ $root:16px;
 		height:100%;
 	}
 }
+/* 右侧导航栏 */
+.mgj_rightbar{
+	position:fixed;
+	height:100%;
+	top:0;
+	right:0;
+	width:30px;
+	color:#000;
+	font-size:12px;
+	background:#202020;
+}
+.mgj_rightbar_blank_div{
+	position:relative;
+	top:0;
+	right:0;
+	height:10%;
+	width:30px;
+}
+/* 购物车 */
+.sidebar-item{
+	position:relative;
+	padding:4px 4px 0;
+	text-align:center;
+	a{
+		display: block;
+		color: #fff;
+		text-align:center;
+		line-height: 15px;
+		border-bottom:1px solid rgba(221,221,221,0.6);
+		padding-bottom:12px;
+	}
+	.s-icon{
+		background-image: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png);
+		background-repeat:no-repeat;
+		width:30px;
+		height:30px;
+		display: block;
+	}
+	.num{
+		display: none;
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 30px;
+	    color: #fff;
+	    text-align: center;
+	    line-height: 20px;
+	    background-color: #ef2f23;
+	    margin-top: 5px;
+	}
+	
+}
+.mgj-my-cart{
+	.s-icon{
+		background-position: -271px -129px;
+		
+	}
+}
+.mgj-my-coupon{
+	.s-icon{
+		background-position: -271px -159px;
+	}
+}
+.mgj-my-wallet{
+	.s-icon{
+		background-position: -271px -219px;
+	}
+}
+.mgj-my-browserlog{
+	.s-icon{
+		background-position: -271px -189px;
+	}
+}
+#sideBottom{
+	position:absolute;
+	bottom:10px;
+	width:30px;
+	background:#202020;
+}
+.mgj-back2top{
+	padding-top:0;
+	padding-bottom:0;
+	a{
+		border-bottom:0;
+		border-top:1px solid rgba(221,221,221,0.6)
+	}
+	.s-icon{
+		background-position:-270px -279px;
+	}
+}
+.mgj-back2top:hover{
+	padding-bottom:0;
+	background-color:#ef2f23;
+	margin-top:0;
+}
+.sidebar-item:hover{
+	background:#ef2f23;
+	margin-top:-1px;
+}
 /* 导航栏标题部分 */
 #nav{
 	width:100%;
@@ -294,6 +406,9 @@ $root:16px;
 	position:relative;
 	float:left;
 	font-family:'PingFang SC';
+	a:hover{
+		text-decoration:underline;
+	}
 
 }
 .nav_list_row_first{
@@ -375,6 +490,30 @@ $root:16px;
 	margin:0 auto;
 	overflow:hidden;
 	
+}
+.mslide_dot_box{
+	position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.dot_default{
+	display:inline-block;
+	width:20px;
+    height:20px;
+    padding:0;
+    background:url(http://s18.mogucdn.com/p2/161124/upload_6fd40a60b3g62dkcg3cc5ijhkf5fe_298x70.png) no-repeat;
+
+    background-position:-97px -18px;
+    
+}
+.dot_show_img{
+	background:none;
+	width:100%;
+	height:100%;
+	// display:none;
 }
 /* 用户信息 */
 .user_info{
@@ -476,4 +615,396 @@ $root:16px;
 	img{
 		width:100%;
 	}
+}
+
+/* 中间内容 */
+.mod_row{
+	width:1200px;
+	margin-bottom:0;
+	height:184px;
+	margin:10px  auto 0;
+	position: relative;
+
+}
+.spcate-fastbuy{
+	margin-left:0;
+	width:470px;
+	height:184px;
+}
+.spcate-mainblock{
+	width:214px;
+	border-right:1px solid #e5e5e5;
+	height:100%;
+	background:#fff;
+	position:relative;
+	display:block;
+
+}
+.spcate-maininfos{
+	height:43px;
+	width:90%;
+	margin-top:20px;
+	margin-left:17px;
+	overflow:hidden;
+}
+.font-title{
+	height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 100%;
+    font-size: 18px;
+}
+.spcate-timer{
+	text-align:center;
+    width:84px;
+    height:20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+    background: #000;
+    opacity: 0.7;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+.spcate-label{
+	display:block;
+	width:52px;
+	height:52px;
+	position:absolute;
+	right:12px;
+	bottom:11px;
+	text-align:center;
+	border-radius:30px;
+	color:#fff;
+	font-size:12px;
+	z-index:5;
+	background:#f57;
+}
+.spcate-labeititle{
+	margin-top:14px;
+	height:15px;
+	line-height:15px;
+	overflow:hidden;
+}
+.spcate-labelprice{
+	height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+}
+.spcate-bigImg{
+	transform: translateX(-5px);
+	width:120px;
+	height:120px;
+	margin:1px auto 0;
+	img{
+		width:100%;
+		display: block;
+		border:0;
+		vertical-align: middle;
+	}
+}
+/* 副 */
+.spcate-subblocks{
+ 	height:100%;
+ 	width:254px;
+ 	overflow:hidden;
+ 	background-color:#fff;
+}
+.spcate-subblock{
+	 margin-bottom: 1px; 
+	 border-bottom: 1px solid #e5e5e5;
+     width:100%;
+     height:91px;
+     overflow:hidden;
+     display: block;
+}
+.spcate-subinfos{
+	margin: 20px auto 0;
+    padding-left: 17px;
+    width: 130px;
+    overflow: hidden;
+}
+.spcate-subgoodsimg{
+	display: block;
+    width: 80px;
+    height: 86px;
+    margin: 6px 10px 0 auto;
+    img{
+    	width:100%;
+    	vertical-align: middle;
+    }
+}
+
+/* 中间模块 */
+.spcate-entry-container{
+	width:470px;
+	overflow: hidden;
+    margin-left: 10px;
+    height: 184px;
+}
+.font-subTitle{
+	height: 17px;
+    line-height: 17px;
+    overflow: hidden;
+    margin-top: 6px;
+    font-size: 14px;
+}
+/* 右边模块 */
+.spcate-banner{
+	width:240px;
+	display:block;
+	background:#fff;
+}
+/* 红人穿搭 */
+.wears{
+	width:1200px;
+	margin:40px auto 0;
+	overflow:hidden;
+	position:relative;
+}
+.cewebrity_dress_module{
+	position: relative;
+	width:100%;
+	height:402px;
+}
+.cewebrity_dress_module_title{
+	position: relative;
+    width: 100%;
+    height: 55px;
+}
+.cewebrity_dress_title{
+	position: absolute;
+    height: 25px;
+    width: 100%;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cewebrity_dress_block{
+	display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    width: 7px;
+    height: 22px;
+    background: #FF484D;
+    vertical-align: bottom;
+}
+.cewebrity_dress_checkmore{
+	display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    line-height: 25px;
+    font-size: 12px;
+}
+.cewebrity_dress_module_content{
+	position:absolute;
+	bottom:0;
+	height:364px;
+	width:100%;
+}
+/* 红人穿搭左边翻转图片模块 */
+.cewebrity_dress_left_part{
+	height:100%;
+	width:950px;
+	position:relative;
+	z-index:10px;
+}
+
+.cewebrity_dress_left_part_item{
+	position:relative;
+	height:100%;
+	width:182px;
+	border-radius:10px;
+	margin-right:10px;
+	overflow:hidden;
+}
+.cewebrity_dress_left_item{
+	display:block;
+	width:182px;
+	height:364px;
+	 img{
+    	width:100%;
+    	border:0;
+    	vertical-align: middle;
+
+    }
+}
+.cewebrity_dress_left_part_item_title{
+	position: absolute;
+    width: 120px;
+    height: 38px;
+    bottom: 26px;
+    left: 31px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    z-index: 2;
+
+}
+.cewebrity_dress_left_part_item_forth{
+	margin-right:-10px;
+}
+/* 红人穿搭右边模块 */
+.cewebrity_dress_right_part{
+	height:100%;
+	width:240px;
+}
+.cewebrity_dress_right_part_item{
+	position:relative;
+	display:block;
+	height:114px;
+	width:114px;
+	margin-right:12px;
+	margin-bottom:11px;
+	border-radius:6px;
+	overflow:hidden;
+	transition: opacity 0.2s;
+	img{
+		width:100%;
+	}
+}
+.cewebrity_dress_right_part_item_title{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+.cewebrity_dress_right_part_item_db{
+	    margin-right: -12px;
+}
+/* footer */
+#footer{
+	width:100%;
+	overflow:hidden;
+	min-height:180px;
+	margin-top:0;
+	padding-top:50px;
+	padding-bottom:50px;
+
+}
+.mgj_copyright{
+	min-height:180px;
+	font-size:12px;
+	margin:0 auto;
+	width:1200px;
+	font-family:"PingFang SC","Times New Roman","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",STXihei,"\534E\6587\7EC6\9ED1",serif;
+
+}
+.mgj_footer_helper{
+	width:100%;
+	height:100px;
+	border-bottom:2px solid #FF5777;
+	
+}
+.mgj_footer_helper_mod{
+	height:100px;
+	float:left;
+	width:25%;
+	a:hover{
+		color: #f57;
+	}
+}
+.mgj_footer_helper_mod_container{
+	padding-left:20px;
+	width:78%;
+}
+.mgj_footer_helper_title{
+	font-size:14px;
+	margin-left:25px;
+	margin-bottom:10px;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	color:#666;
+}
+.mgj_footer_helper_item{
+	float:left;
+	display:inline-block;
+	width:80px;
+	height:20px;
+	line-height:20px;
+	div{
+		color: #999;
+	}
+	a{
+		color: #999;
+	}
+}
+.mgj_footer_helper_item_last{
+	position:relative;
+	width:62px;
+	display:inline-block;
+}
+.mgj_footer_helper_quoer_code{
+	position:absolute;
+	display:none;
+	height:70px;
+	width:70px;
+	top:20px;
+	left:-17px;
+	overflow:hidden;
+}
+.mgj_footer_helper_item_last:hover .mgj_footer_helper_quoer_code{
+	display:block;
+}
+.mgj_footer_otherlink{
+	margin-bottom:8px;
+	line-height:27px;
+	border-bottom:1px solid #ddd;
+}
+.mgj_footer_otherlink_container{
+	margin:5px 0;
+}
+.mgj_footer_a{
+	display:inline-block;
+	color:#666；
+}
+.mgj_footer_a:hover{
+	color:#f57;
+}
+.mgj_footer_b{
+	margin:0 5px;
+	font-weight:400;
+	color；:#666;
+}
+.mgj_footer_mgjinfo{
+	min-height:20px;
+	margin-top:10px;
+	overflow:hidden;
+	a:hover{
+		color: #f57;
+	}
+}
+.mgj_footer_mgjinfo_item{
+	float:left;
+	display:inline-block;
+	width:80px;
+	height:20px;
+	line-height:20px;
+	a{
+		color: #666;
+	}
+}
+.mgjhostname{
+	color:#999;
+}
+
+.mgj_footer_copyright{
+	margin-bottom:8px;
+	line-height:27px;
+	a:hover{
+		color: #999;
+	}
+
 }
